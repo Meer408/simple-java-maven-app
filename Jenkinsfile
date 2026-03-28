@@ -24,7 +24,7 @@ pipeline {
                     tomcat9(
                         credentialsId: 'tomcat-cred',
                         path: '',
-                        url: 'http://<TOMCAT_PUBLIC_IP>:8080'
+                        url: 'http://18.232.109.73/:8080'
                     )
                 ],
                 contextPath: 'myapp',
