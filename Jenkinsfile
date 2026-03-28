@@ -6,10 +6,9 @@ pipeline {
     }
 
     stages {
-
-        stage('Clone Code') {
+        stage('Checkout') {
             steps {
-                git 'https://github.com/YOUR_USERNAME/YOUR_REPO.git'
+                checkout scm
             }
         }
 
